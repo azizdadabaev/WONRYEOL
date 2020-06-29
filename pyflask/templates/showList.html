@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 10 Keywords</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .li {
+            float: left;
+            padding: 10px;
+        }
+
+        .li2 {
+            list-style: none;
+
+        }
+
+        .ul {
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        img {
+            width: 430px;
+            height: 280px;
+            border: 0;
+            padding: 20px 0px;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        h1,
+        span {}
+
+        #wrap {
+            margin: 50px auto;
+            width: 2000px;
+            background-color: white;
+        }
+
+        #wrap2 {
+
+            width: 2000px padding : 30px ;
+            height: 1600px ;
+
+        }
+        
+        #header {
+            padding: 50px;
+        }
+
+        #nav {
+
+            margin-left: 30px;
+            display: block;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        #aside {
+            margin-left: 30px;
+            width: 1580px;
+            height: 800px;
+            float: left;
+        }
+
+        #content {
+            width: 390px;
+            height: 800px;
+            float: right;
+        }
+
+        #content h3 {
+            margin-top: 30px;
+        }
+
+        #content li {
+            margin-left: 10px;
+        }
+
+        .search {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>Top 10 Keywords</h1>
+            
+        </div>
+        
+
+        <div id="wrap2">
+            <div id="aside">
+                
+                Keywords : {{testdata[1,10]}}<br>
+
+                <a href="#" id="myUniqueLinkId1">1. {{ testdata[1] }}</a><br/>
+                <a href="#" id="myUniqueLinkId2">2. {{ testdata[2] }}</a><br/>
+                <a href="#" id="myUniqueLinkId3">3. {{ testdata[3] }}</a><br/>
+                <a href="#" id="myUniqueLinkId4">4. {{ testdata[4] }}</a><br/>
+                <a href="#" id="myUniqueLinkId5">5. {{ testdata[5] }}</a><br/>
+                <a href="#" id="myUniqueLinkId6">6. {{ testdata[6] }}</a><br/>
+                <a href="#" id="myUniqueLinkId7">7. {{ testdata[7] }}</a><br/>
+                <a href="#" id="myUniqueLinkId8">8. {{ testdata[8] }}</a><br/>
+                <a href="#" id="myUniqueLinkId9">9. {{ testdata[9] }}</a><br/>
+                <a href="#" id="myUniqueLinkId9">10. {{ testdata[10] }}</a><br/>
+
+
+  <div style="width: 500px; height: 400px; ">
+    <img src="{{ url_for('static', filename  = 'images/clickexplain.png') }}" alt="explain how to do" widht  = "650px"  height="300px">
+</div>
+                <script>
+                    
+
+                    
+
+
+                    var myURL1 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[1] }}';
+                    document.getElementById('myUniqueLinkId1').href = myURL1;
+
+                    var myURL2 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[2] }}';
+                    document.getElementById('myUniqueLinkId2').href = myURL2;
+
+                    var myURL3 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[3] }}';
+                    document.getElementById('myUniqueLinkId3').href = myURL3;
+
+                    var myURL4 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[4] }}';
+                    document.getElementById('myUniqueLinkId4').href = myURL4;
+
+                    var myURL5 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[5] }}';
+                    document.getElementById('myUniqueLinkId5').href = myURL5;
+
+                    var myURL6 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[6] }}';
+                    document.getElementById('myUniqueLinkId6').href = myURL6;
+
+                    var myURL7 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[7] }}';
+                    document.getElementById('myUniqueLinkId7').href = myURL7;
+
+                    var myURL8 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[8] }}';
+                    document.getElementById('myUniqueLinkId8').href = myURL8;
+
+                    var myURL9 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[9] }}';
+                    document.getElementById('myUniqueLinkId9').href = myURL9;
+
+                    var myURL10 ="https://www.amazon.com/s?k=" + '{{ testdata[0] }} + {{ testdata[10] }}';
+                    document.getElementById('myUniqueLinkId10').href = myURL10;
+
+
+
+
+
+                    
+                </script>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title> showing shoping list </title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  
+
+  <h1>We can show you shoping list in amazon from your favorite youtube video!!</h1>
+
+  <div style="width: 500px; height: 400px; ">
+    <img src="{{ url_for('static', filename  = 'images/explain2.png') }}" alt="explain how to do" widht  = "650px"  height="300px">
+</div>
+
+
+  <div>
+    <form name  = "youtube " action = "/showList" method = "post">
+      <div>please input youtube video's address
+        </div>
+      <input type = "text" name = "URL" value="youtube URL" size = "60">
+
+
+
+      <input type = "submit" value = "Show list">
+
+
+    </form>
+
+  </div>
+</body>
+</html>
